@@ -32,13 +32,7 @@ class GOST71:
             if len(self.resource_stack[0]) != 0:
                 self.result += self.resource_stack[0][0] + " "
                 self.result += self.resource_stack[1] + " / "
-                for author_index in range(0, len(self.resource_stack[0])):
-                    if author_index != 0:
-                        self.result += ","
-                    self.result += self.resource_stack[0][author_index]
-                self.result += "– " + self.resource_stack[2]
-                self.result += "– " + self.resource_stack[3] + ": " + self.resource_stack[4] + ", "
-                self.result += self.resource_stack[5] + "–"
+
 
 
     def __str__(self):
