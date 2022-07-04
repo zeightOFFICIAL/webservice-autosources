@@ -30,11 +30,10 @@ class GOST71:
     def format(self):
         if self.resource_type == "book":
             if len(self.resource_stack[0]) != 0:
-                self.result += self.resource_stack[0][0] + " "
+                self.result += self.resource_stack[1]
                 self.result += self.resource_stack[1] + " / "
 
 
 
     def __str__(self):
         return str(self.resource_type) + "\n" + str(self.resource_stack)
-
