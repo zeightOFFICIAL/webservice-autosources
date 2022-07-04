@@ -4,8 +4,8 @@ for Article, book or web-source
 SPBSUT
 
 Saganenko A.V
-Kuxin A.A
-Maximenko S.O
+Kuksin A.A
+Maksimenko S.O
 Markin N.
 Scherbakova N.
 Ibragimova A.
