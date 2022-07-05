@@ -22,7 +22,7 @@ import format
 
 def main():
 
-    print(format.gostformat("book", ("Glinka A.A.", "Lovers and Dungeons", "DolbitNorm", "2020", "431")))
+    print(format.gostformat("webresource", ("Glinka A.A.", "Lovers and Dungeons", "http://DolbitNorm", "05.05.2020")))
 
 
 if __name__ == "__main__":
