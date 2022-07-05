@@ -19,9 +19,11 @@ Python 3.9
 
 import format
 
+
 def main():
-    result = format.GOST("book", ("Glinka A.A.", "Lovers and Dungeons", "DolbitNorm", "2020", "431"))
-    print(result)
+
+    print(format.gostformat("book", ("Glinka A.A.", "Lovers and Dungeons", "DolbitNorm", "2020", "431")))
+
 
 if __name__ == "__main__":
     main()
