@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+                                    /* Main semantic tags */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #000047;
+    color: #fff;
+}
+
+main {
+    margin-top: 15px;
+}
+
+                                    /* Header styling */
+
+.header-title {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.header-support {
+    margin-right: 10px;
+    color: grey;
+    font-size: 15px;
+}
+
+                                    /* Buttons styling */
+
+button {
+    margin: 0;
+    border: none;
+    background-color: #fff;
+}
+
+.copy-button {
+    background-color: #3D8BCD;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.load-button {
+    background-color: #3D8BCD;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Navigation butttons */
+
+.navigation-set {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-left: 5px;
+}
+
+.set {
+    position: absolute;
+    display: flex;
+}
+
+.navigation-button {
+    padding: 5px 30px;
+    width: 200px;
+    height: 40px;
+    border-bottom: 1px solid grey;
+    color: #3D8BCD;
+}
+
+.active {
+    border: 1px solid grey;
+    border-bottom: none;
+    color: #000;
+}
+
+.navigation-main-page {
+    border-left: none;
+}
+
+.empty-box {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+/* User input buttons styling */
+
+.user-input-set {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.user-input-button {
+    border-radius: 5px;
+    background-color: #000047;
+    color: #fff;
+    padding: 10px 15px;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.user-input-button:hover {
+    background-color: #000097;
+}
+
+.book-button {
+    margin-left: 0;
+}
+
+.user-input-active {
+    background-color: #000097;
+}
+
+.generate-button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+    background-color: #3D8BCD;
+}
+
+
+                                    /* Sections styling */
+
+section {
+    display: none;
+}
+
+.section-visible {
+    display: flex;
+}
+
+/* Main page section styling */
+
+.cards {
+    display: flex;
+    padding-top: 120px;
+}
+
+.card {
+    border: 1px solid #000047;
+    border-radius: 5px;
+    margin-left: 30px;
+    width: 250px;
+}
+
+.user-input-card {
+    margin-left: 0;
+}
+
+.card-header {
+    background-color: #000047;
+    color: #fff;
+    padding-top: 18px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+}
+
+.card-description {
+    padding: 20px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .card-header {
+    background-color: #000097;
+}
+
+/* User input section styling */
+
+form {
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.user-input-form {
+    display: none;
+}
+
+.form-visible {
+    display: block;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 0.5px solid #3D8BCD;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+label {
+    padding-left: 3px;
+    font-size: medium;
+}
+
+.input {
+    margin-bottom: 30px;
+}
+
+.last-input {
+    margin-bottom: 0;
+}
+
+.book-result {
+    display: flex;
+    margin-top: 50px;
+}
+
+.result-input {
+    margin-right: 15px;
+}
