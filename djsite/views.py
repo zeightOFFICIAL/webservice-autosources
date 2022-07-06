@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from meat.format import gostformat
-import json
 
 def index(request):
     res=""
