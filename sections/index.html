@@ -17,15 +17,15 @@
     <main>
         <div class="navigation-set">
             <div class="set">
-                <button name="main-page" class="navigation-main-page navigation-button active">Главная страница</button>
-                <button name="user-input" class="navigation-user-input navigation-button">Ручной ввод</button>
+                <button name="main-page" class="navigation-main-page navigation-button {{main_button_active}}">Главная страница</button>
+                <button name="user-input" class="navigation-user-input navigation-button {{user_button_active}}">Ручной ввод</button>
                 <button name="url-page" class="navigation-url navigation-button">составление по URL</button>
                 <button name="sussex4" class="navigation-document navigation-button">Чтение из документа</button>
             </div>
             <div class="empty-box"></div>
         </div>
 
-        <section class="main-page section-visible">
+        <section class="main-page {{main_page_active}}">
             <div class="container">
                 <div class="cards">
                     <div name="navigation-user-input" class="card user-input-card">
@@ -56,7 +56,7 @@
             </div>
         </section>
 
-        <section class="user-input">
+        <section class="user-input  {{user_input_active}}">
             <div class="container">
                 <div class="user-input-set">
                     <button name="book-form" class="user-input-button book-button user-input-active">книга</button>
