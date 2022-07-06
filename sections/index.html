@@ -63,7 +63,8 @@
                     <button name="article-form" class="user-input-button">статья из журнала</button>
                     <button name="resource-form" class="user-input-button">интернет ресурс</button>
                 </div>
-                <form action="" class="user-input-form book-form form-visible">
+                <form method="post" action="" class="user-input-form book-form form-visible">
+                    {% csrf_token %} 
                     <div class="input">
                         <label for="surname">Фамилия и инициалы авторов</label>
                         <input type="text" name="surname" id="surname">
@@ -86,7 +87,7 @@
                     </div>
                     <button class="user-input-button generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
-                        <input type="text" class="result-input">
+                        <input type="text" class="result-input" value="{{result}}">
                         <button class="copy-button">Скопировать</button>
                     </div>
                 </form>
