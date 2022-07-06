@@ -68,6 +68,16 @@ cards.forEach(card => {
 let userInpBtns = document.querySelectorAll('.user-input-button')
 let userInpForms = document.querySelectorAll('.user-input-form')
 
+userInpBtns.forEach(button => {
+    button.addEventListener('click', () => {
+        deactivateUserInpBtns()
+        deactivateUserInpForms() 
+        let bookForm = document.querySelector('.'+button.name)
+        button.classList.add('user-input-active')
+        bookForm.classList.add('form-visible')
+    })
+})
+
 function deactivateUserInpBtns() {
     userInpBtns.forEach(button => {
         if (button.classList.contains('user-input-active')) {
@@ -83,12 +93,3 @@ function deactivateUserInpForms() {
         }
     })
 }
-
-// userInpForms.forEach(form => {
-//     form.addEventListener('submit', (e) => {
-//         inputs = document.querySelectorAll('.text-input')
-//         inputs.forEach(input => {
-//             input.value = ''
-//         })
-//     })
-// })

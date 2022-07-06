@@ -65,6 +65,7 @@
                 </div>
                 <form method="POST" action="" class="user-input-form book-form form-visible">
                     {% csrf_token %}
+                    <input type="hidden" name="type" id="type" value="type_book">
                     <div class="input">
                         <label for="surname">Фамилия и инициалы авторов</label>
                         <input class="text-input" type="text" name="surname" id="surname">
@@ -92,8 +93,9 @@
                     </div>
                 </form>
                 
-                <form action="" class="user-input-form article-form">
-                    
+                <form method="POST" action="" class="user-input-form article-form">
+                    {% csrf_token %}
+                    <input type="hidden" name="type" id="type" value="type_article">
                     <div class="input">
                         <label for="author-surname">Фамилия и инициалы авторов</label>
                         <input class="text-input" type="text" name="author-surname" id="author-surname">
@@ -120,7 +122,7 @@
                     </div>
                     <button class="generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
-                        <input type="text" class="result-input">
+                        <input type="text" class="result-input" value="{{result}}">
                         <button class="copy-button">Скопировать</button>
                     </div>
                 </form>
