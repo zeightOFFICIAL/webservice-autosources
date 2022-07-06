@@ -63,29 +63,29 @@
                     <button name="article-form" class="user-input-button">статья из журнала</button>
                     <button name="resource-form" class="user-input-button">интернет ресурс</button>
                 </div>
-                <form method="post" action="" class="user-input-form book-form form-visible">
-                    {% csrf_token %} 
+                <form method="POST" action="" class="user-input-form book-form form-visible">
+                    {% csrf_token %}
                     <div class="input">
                         <label for="surname">Фамилия и инициалы авторов</label>
-                        <input type="text" name="surname" id="surname">
+                        <input class="text-input" type="text" name="surname" id="surname">
                     </div>
                     <div class="input">
                         <label for="book-name">Название книги</label>
-                        <input type="text" name="book-name" id="book-name">
+                        <input class="text-input" type="text" name="book-name" id="book-name">
                     </div>
                     <div class="input">
                         <label for="publish-name">Название издательства</label>
-                        <input type="text" name="publish-name" id="publish-name">
+                        <input class="text-input" type="text" name="publish-name" id="publish-name">
                     </div>
                     <div class="input">
                         <label for="publish-year">Год издания</label>
-                        <input type="text" name="publish-year" id="publish-year">
+                        <input class="text-input" type="text" name="publish-year" id="publish-year">
                     </div>
                     <div class="input last-input">
                         <label for="page-number">Количество страниц</label>
-                        <input type="text" name="page-number" id="page-number">
+                        <input class="text-input" type="text" name="page-number" id="page-number">
                     </div>
-                    <button class="user-input-button generate-button">Сгенерировать</button>
+                    <button class="generate-button" name="generate_book">Сгенерировать</button>
                     <div class="input last-input book-result">
                         <input type="text" class="result-input" value="{{result}}">
                         <button class="copy-button">Скопировать</button>
@@ -93,31 +93,32 @@
                 </form>
                 
                 <form action="" class="user-input-form article-form">
+                    
                     <div class="input">
                         <label for="author-surname">Фамилия и инициалы авторов</label>
-                        <input type="text" name="author-surname" id="author-surname">
+                        <input class="text-input" type="text" name="author-surname" id="author-surname">
                     </div>
                     <div class="input">
                         <label for="article-name">Название статьи</label>
-                        <input type="text" name="article-name" id="article-name">
+                        <input class="text-input" type="text" name="article-name" id="article-name">
                     </div>
                     <div class="input">
                         <label for="magazine-name">Название журнала</label>
-                        <input type="text" name="magazine-name" id="magazine-name">
+                        <input class="text-input" type="text" name="magazine-name" id="magazine-name">
                     </div>
                     <div class="input">
                         <label for="article-publish-year">Год издания</label>
-                        <input type="text" name="article-publish-year" id="article-publish-year">
+                        <input class="text-input" type="text" name="article-publish-year" id="article-publish-year">
                     </div>
                     <div class="input">
                         <label for="magazine-number">Номер журнала</label>
-                        <input type="text" name="magazine-number" id="magazine-number">
+                        <input class="text-input" type="text" name="magazine-number" id="magazine-number">
                     </div>
                     <div class="input last-input">
                         <label for="magazine-article-number">Номер статьи в журнале</label>
-                        <input type="text" name="magazine-article-number" id="magazine-article-number">
+                        <input class="text-input" type="text" name="magazine-article-number" id="magazine-article-number">
                     </div>
-                    <button class="user-input-button generate-button">Сгенерировать</button>
+                    <button class="generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
                         <input type="text" class="result-input">
                         <button class="copy-button">Скопировать</button>
@@ -126,21 +127,21 @@
                 <form action="" class="user-input-form resource-form">
                     <div class="input">
                         <label for="resource-author">Автор сайта</label>
-                        <input type="text" name="resource-author" id="resource-author">
+                        <input class="text-input" type="text" name="resource-author" id="resource-author">
                     </div>
                     <div class="input">
                         <label for="resource-name">Заголовок статьи или страницы</label>
-                        <input type="text" name="resource-name" id="resource-name">
+                        <input class="text-input" type="text" name="resource-name" id="resource-name">
                     </div>
                     <div class="input">
                         <label for="resource-link">Ссылка</label>
-                        <input type="text" name="resource-link" id="resource-link">
+                        <input class="text-input" type="text" name="resource-link" id="resource-link">
                     </div>
                     <div class="input last-input">
                         <label for="visit-date">Дата обращения на сайт</label>
-                        <input type="text" name="visit-date" id="visit-date">
+                        <input class="text-input" type="text" name="visit-date" id="visit-date">
                     </div>
-                    <button class="user-input-button generate-button">Сгенерировать</button>
+                    <button class="generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
                         <input type="text" class="result-input">
                         <button class="copy-button">Скопировать</button>
@@ -164,6 +165,9 @@
             </div>
         </section>
     </main>
+    <script>
+        var csrftoken = '{% csrf_token %}';
+    </script>
     <script src="{% static 'script.js' %}"></script>
 </body>
 </html>
