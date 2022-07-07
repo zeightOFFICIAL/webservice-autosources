@@ -122,11 +122,13 @@
                     </div>
                     <button class="generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
-                        <input type="text" class="result-input" value="{{result}}">
+                        <input type="text" class="result-input" value="{{result2}}">
                         <button class="copy-button">Скопировать</button>
                     </div>
                 </form>
-                <form action="" class="user-input-form resource-form">
+                <form method="POST" action="" class="user-input-form resource-form">
+                    {% csrf_token %}
+                    <input type="hidden" name="type" id="type" value="type_source">
                     <div class="input">
                         <label for="resource-author">Автор сайта</label>
                         <input class="text-input" type="text" name="resource-author" id="resource-author">
@@ -145,7 +147,7 @@
                     </div>
                     <button class="generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
-                        <input type="text" class="result-input">
+                        <input type="text" class="result-input" value="{{result3}}">
                         <button class="copy-button">Скопировать</button>
                     </div>
                 </form>
