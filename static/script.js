@@ -93,3 +93,23 @@ function deactivateUserInpForms() {
         }
     })
 }
+
+var copyText = document.getElementById("result1");
+var copyText2 = document.getElementById("result2");
+var copyText3 = document.getElementById("result3");
+
+function Copy() {
+    var textToCopy = copyText.value;
+    console.log(textToCopy);
+    navigator.clipboard.writeText(textToCopy)
+}
+function Copy2() {
+    var textToCopy = copyText2.value;
+    console.log(textToCopy);
+    navigator.clipboard.writeText(textToCopy)
+}
+function Copy3() {
+    var textToCopy = copyText3.value;
+    console.log(textToCopy);
+    navigator.clipboard.writeText(textToCopy)
+}
