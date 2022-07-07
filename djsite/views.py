@@ -11,7 +11,10 @@ def home_or_output_book(request):
         return render(request, 'index.html',{
                                             "result":res, "result2":"", "result3":"", 
                                             "main_page_active":"", "user_input_active":"section-visible",
-                                            "main_button_active":"", "user_button_active":"active"
+                                            "main_button_active":"", "user_button_active":"active",
+                                            "book_form_visible":"form-visible", "book_button_active":"user-input-active",
+                                            "article_form_visible":"", "article_button_active":"",
+                                            "resource_form_visible":"", "resource_button_active":""
                                             })
     return render(request, 'index.html', {
                                           "result":"", "result2":"", "result3":"", 
@@ -29,12 +32,15 @@ def index_1(request):
                                             "result":"", "result2":res, "result3":"",
                                             "main_page_active":"", "user_input_active":"section-visible",
                                             "main_button_active":"", "user_button_active":"active",
+                                            "book_form_visible":"", "book_button_active":"",
+                                            "article_form_visible":"form-visible", "article_button_active":"user-input-active",
+                                            "resource_form_visible":"", "resource_button_active":""
                                             }) 
     else: 
             return render(request, 'index.html', {
                                           "result":"", "result2":"", "result3":"", 
                                           "main_page_active":"section-visible", "user_input_active":"",
-                                          "main_button_active":"active", "user_button_active":""
+                                          "main_button_active":"active", "user_button_active":"",
                                          })                        
 
 def index_2(request):
@@ -46,6 +52,9 @@ def index_2(request):
                                             "result":"", "result2":"", "result3":res,
                                             "main_page_active":"", "user_input_active":"section-visible",
                                             "main_button_active":"", "user_button_active":"active",
+                                            "book_form_visible":"", "book_button_active":"",
+                                            "article_form_visible":"", "article_button_active":"",
+                                            "resource_form_visible":"form-visible", "resource_button_active":"user-input-active"
                                             })
     else: 
             return render(request, 'index.html', {
