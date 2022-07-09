@@ -19,7 +19,8 @@ def home_or_output_book(request):
     return render(request, 'index.html', {
                                           "result":"", "result2":"", "result3":"", 
                                           "main_page_active":"section-visible", "user_input_active":"",
-                                          "main_button_active":"active", "user_button_active":""
+                                          "main_button_active":"active", "user_button_active":"",
+                                          "book_form_visible":"form-visible", "book_button_active":"user-input-active",
                                          })     
 
 def index_1(request):
@@ -41,6 +42,7 @@ def index_1(request):
                                           "result":"", "result2":"", "result3":"", 
                                           "main_page_active":"section-visible", "user_input_active":"",
                                           "main_button_active":"active", "user_button_active":"",
+                                          "book_form_visible":"form-visible", "book_button_active":"user-input-active",
                                          })                        
 
 def index_2(request):
@@ -60,5 +62,6 @@ def index_2(request):
             return render(request, 'index.html', {
                                           "result":"", "result2":"", "result3":"", 
                                           "main_page_active":"section-visible", "user_input_active":"",
-                                          "main_button_active":"active", "user_button_active":""
+                                          "main_button_active":"active", "user_button_active":"",
+                                          "book_form_visible":"form-visible", "book_button_active":"user-input-active"
                                          })      
