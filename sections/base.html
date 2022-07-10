@@ -89,7 +89,7 @@
                     <button class="generate-button" name="generate_book">Сгенерировать</button>
                     <div class="input last-input book-result">
                         <input type="text" class="result-input" id="result1" value="{{result}}">
-                        <button class="copy-button" onclick="Copy()">Скопировать</button>
+                        <button class="copy-button" type="button" onclick="Copy()">Скопировать</button>
                     </div>
                 </form>
 
@@ -123,7 +123,7 @@
                     <button class="generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
                         <input type="text" class="result-input" id="result2" value="{{result2}}">
-                        <button class="copy-button" onclick="Copy2()">Скопировать</button>
+                        <button class="copy-button" type="button" onclick="Copy2()">Скопировать</button>
                     </div>
                 </form>
                 <form method="POST" action="{% url 'index_webresource' %}" class="user-input-form resource-form {% block resource_form_visible %} {% endblock resource_form_visible %}">
@@ -148,7 +148,7 @@
                     <button class="generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
                         <input type="text" class="result-input" id="result3" value="{{result3}}">
-                        <button class="copy-button" onclick="Copy3()">Скопировать</button>
+                        <button class="copy-button" type="button" onclick="Copy3()">Скопировать</button>
                     </div>
                 </form>
             </div>

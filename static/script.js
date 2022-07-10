@@ -102,14 +102,18 @@ function Copy() {
     var textToCopy = copyText.value;
     console.log(textToCopy);
     navigator.clipboard.writeText(textToCopy)
+    copyText.value = ''
+    console.log(copyText.value)
 }
 function Copy2() {
     var textToCopy = copyText2.value;
     console.log(textToCopy);
     navigator.clipboard.writeText(textToCopy)
+    copyText2.value = ''
 }
 function Copy3() {
     var textToCopy = copyText3.value;
     console.log(textToCopy);
     navigator.clipboard.writeText(textToCopy)
+    copyText3.value = ''
 }
