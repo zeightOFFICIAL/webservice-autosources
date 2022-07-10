@@ -1,3 +1,33 @@
+#format.py 0031
+
+"""
+resource stack:
+    book:
+    {
+        author,
+        title,
+        publisher,
+        publish date,
+        amount of pages
+    }
+    article
+    {
+        author,
+        article title,
+        magazine title,
+        publish date,
+        number of issue,
+        number of article
+    }
+    web-resource
+    {
+        site author,
+        title of page or article,
+        reference,
+        date of visit
+    }
+"""
+
 def gostformat(resource_type, resource_stack):
     result = ""
     if resource_type == "book":
