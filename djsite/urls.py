@@ -19,7 +19,7 @@ from .views import *
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('', home_or_book_page, name="index_book"),
-    path('article/', article_page, name="index_article"),
-    path('webresource/', websource_page, name='index_webresource'),
+    path('', home_or_output_book, name="index_book"),
+    path('article/', index_1, name="index_article"),
+    path('webresource/', index_2, name='index_webresource'),
 ]
