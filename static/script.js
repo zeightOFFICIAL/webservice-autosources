@@ -13,6 +13,10 @@ console.log(navBtnSet)
 let sections = document.querySelectorAll('section')
 console.log(sections)
 
+var copyText = document.getElementById("result1");
+var copyText2 = document.getElementById("result2");
+var copyText3 = document.getElementById("result3");
+
 function deactivateBtns() {
     navBtnSet.forEach(button => {
         if (button.classList.contains('active')) {
@@ -93,10 +97,6 @@ function deactivateUserInpForms() {
         }
     })
 }
-
-var copyText = document.getElementById("result1");
-var copyText2 = document.getElementById("result2");
-var copyText3 = document.getElementById("result3");
 
 function Copy() {
     var textToCopy = copyText.value;
