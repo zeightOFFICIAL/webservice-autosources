@@ -1,28 +1,25 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import Http404
-from meat.format import gostformat,book,article,webresource
+from meat.requests import book_request, article_request, webresource_request
 
-
-def home_or_output_book(request):
-    res=""
+def home_index(request):
+    result = ""
     if request.method == "POST":
-        res= book(request)
-        return render(request, 'base3.html',{"result":res})
-    return render(request, 'base2.html')
+        result=book_request(request)
+        return render(request, 'book_page.html', {"result":result})
+    return render(request, 'homepage.html')
 
-def index_1(request):
-    res = ""
+def article_index(request):
+    result = ""
     if request.method == "POST":
-        res=article(request)
-        return render(request, 'base4.html',{"result2":res})
+        result=article_request(request)
+        return render(request, 'article_page.html', {"result2":result})
+    return render(request, 'homepage.html')
 
-    return render(request, 'base2.html')
-
-def index_2(request):
-    res = ""
+def webresource_index(request):
+    result = ""
     if request.method == "POST":
-        res=webresource(request)
-        return render(request, "base5.html",{"result3":res})
-
-    return render(request, 'base2.html')
+        result=webresource_request(request)
+        return render(request, "webresource_page.html", {"result3":result})
+    return render(request, 'homepage.html')
