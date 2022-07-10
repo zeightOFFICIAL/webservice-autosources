@@ -54,10 +54,19 @@ button {
     border-radius: 5px;
 }
 
+.copy-button:hover {
+    background-color: #000097;
+}
+
 .load-button {
     background-color: #3D8BCD;
     color: #fff;
     border-radius: 5px;
+    width: 100px;
+}
+
+.load-button:hover {
+    background-color: #000097;
 }
 
 /* Navigation butttons */
@@ -139,6 +148,10 @@ button {
     margin-left: 0;
     margin-top: 30px;
     background-color: #3D8BCD;
+}
+
+.generate-button:hover {
+    background-color: #000097;
 }
 
 
@@ -234,3 +247,9 @@ label {
 .result-input {
     margin-right: 15px;
 }
+
+/* Url section styling */
+
+
+
+
