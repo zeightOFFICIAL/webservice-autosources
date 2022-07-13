@@ -38,7 +38,7 @@ def gostformat(resource_type, resource_stack):
                 result = "{0}. - {1}, {2}. - {3} c.".format(resource_stack[1],resource_stack[2],resource_stack[3],resource_stack[4])
             elif len(resource_stack_list) == 1:
                 result = "{0} {1}. - {2}, {3}. - {4} c.".format(resource_stack_list[0],resource_stack[1],resource_stack[2],resource_stack[3],resource_stack[4])
-            elif len(resource_stack_list) == 2 or 3:
+            elif len(resource_stack_list) >= 2:
                 result = "{0} {1} / ".format(resource_stack_list[0],resource_stack[1])
                 for author_index in range(0, len(resource_stack_list)):
                     if author_index == len(resource_stack_list)-1:
