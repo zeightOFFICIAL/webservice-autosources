@@ -1,3 +1,5 @@
+#urls.py 0040
+
 """djsite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -19,7 +21,7 @@ from .views import *
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('', home_index, name="index_book"),
-    path('article/', article_index, name="index_article"),
-    path('webresource/', webresource_index, name='index_webresource'),
+    path('', home_or_book_page, name="index_book"),
+    path('article/', article_page, name="index_article"),
+    path('webresource/', websource_page, name='index_webresource'),
 ]

@@ -1,27 +1,31 @@
-#views.py 0031
+#views.py 0040
 
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import Http404
-from meat.requests import book_request, article_request, webresource_request
 
-def home_index(request):
+from meat.format import format_book, format_article, format_websource
+from meat.defaults import default_index, book_index, article_index, websource_index
+
+def home_or_book_page(request):
+    result=""
+    if request.method == "POST":
+        result=format_book(request)
+        return render(request, 'index.html', book_index(result))
+    return render(request, 'index.html', default_index())     
+
+def article_page(request):
     result = ""
     if request.method == "POST":
-        result=book_request(request)
-        return render(request, 'book_page.html', {"result":result})
-    return render(request, 'homepage.html')
+        result=format_article(request)
+        return render(request, 'index.html', article_index(result)) 
+    else: 
+        return render(request, 'index.html', default_index())                          
 
-def article_index(request):
+def websource_page(request):
     result = ""
     if request.method == "POST":
-        result=article_request(request)
-        return render(request, 'article_page.html', {"result2":result})
-    return render(request, 'homepage.html')
-
-def webresource_index(request):
-    result = ""
-    if request.method == "POST":
-        result=webresource_request(request)
-        return render(request, "webresource_page.html", {"result3":result})
-    return render(request, 'homepage.html')
+        result=format_websource(request)
+        return render(request, "index.html", websource_index(result))
+    else: 
+        return render(request, 'index.html', default_index())     
