@@ -4,8 +4,6 @@
 The project was implemented from scratch in Python and Javascript. It contains 3 types of manual input for different information sources. The development was carried out by second-year students, without any absolute skills in this area, but nothing prevents us from moving forward in this matter.
 # How to use
 ### Main page
-- At the beginning, you will find a button to go to manual input
-### Manual input
 - Choose one of three available variants
 - Fill in the fields according to your details
 - Press button "Сгенерировать"
