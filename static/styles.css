@@ -40,6 +40,11 @@ main {
     font-size: 15px;
 }
 
+.header-developers {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
                                     /* Buttons styling */
 
 button {
@@ -169,19 +174,17 @@ section {
 
 .cards {
     display: flex;
+    width: 100%;
     padding-top: 120px;
 }
 
 .card {
     border: 1px solid #000047;
     border-radius: 5px;
-    margin-left: 30px;
+    margin: 0 auto;
     width: 250px;
 }
 
-.user-input-card {
-    margin-left: 0;
-}
 
 .card-header {
     background-color: #000047;

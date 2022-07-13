@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sas</title>
+    <title>Оформление источников</title>
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
     <header>
         <h1 class="header-title">Система автоматического оформления списка источников</h1>
-        <p class="header-support">Обратная связь</p>
+        <div class="header-developers">
+            <p class="header-support">Веб-сервис разработан группами: </p>
+            <p class="header-support">ИКПИ-04: Маркин Н.В., Куксин А.А., Саганенко А.В., Максименко С.О.</p>
+            <p class="header-support">ИКПИ-03: Курбанов Д.Г., Ибрагимова А.Т., Щербакова А.А.</p>
+        </div>
     </header>
 
     <main>
-        <div class="navigation-set">
+        <!-- <div class="navigation-set">
             <div class="set">
                 <button name="main-page" class="navigation-main-page navigation-button {{main_button_active}}">Главная страница</button>
                 <button name="user-input" class="navigation-user-input navigation-button {{user_button_active}}">Ручной ввод</button>
@@ -23,9 +27,9 @@
                 <button name="document-page" class="navigation-document navigation-button">Чтение из документа</button>
             </div>
             <div class="empty-box"></div>
-        </div>
+        </div> -->
 
-        <section class="main-page {{main_page_active}}">
+        <!-- <section class="main-page {{main_page_active}}">
             <div class="container">
                 <div class="cards">
                     <div name="navigation-user-input" class="card user-input-card">
@@ -54,7 +58,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="user-input {{user_input_active}}">
             <div class="container">
