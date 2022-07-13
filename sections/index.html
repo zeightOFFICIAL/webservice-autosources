@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оформление источников</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
@@ -72,23 +75,23 @@
                     <input type="hidden" name="type" id="type" value="type_book">
                     <div class="input">
                         <label for="surname">Фамилия и инициалы авторов</label>
-                        <input class="text-input" type="text" name="surname" id="surname">
+                        <input class="text-input" type="text" name="surname" id="surname" placeholder="Фамилия и инициалы авторов">
                     </div>
                     <div class="input">
                         <label for="book-name">Название книги</label>
-                        <input class="text-input" type="text" name="book-name" id="book-name">
+                        <input class="text-input" type="text" name="book-name" id="book-name" placeholder="Название книги">
                     </div>
                     <div class="input">
                         <label for="publish-name">Название издательства</label>
-                        <input class="text-input" type="text" name="publish-name" id="publish-name">
+                        <input class="text-input" type="text" name="publish-name" id="publish-name" placeholder="Название издательства">
                     </div>
                     <div class="input">
                         <label for="publish-year">Год издания</label>
-                        <input class="text-input" type="text" name="publish-year" id="publish-year">
+                        <input class="text-input" type="text" name="publish-year" id="publish-year" placeholder="ДД.ММ.ГГ">
                     </div>
                     <div class="input last-input">
                         <label for="page-number">Количество страниц</label>
-                        <input class="text-input" type="text" name="page-number" id="page-number">
+                        <input class="text-input" type="text" name="page-number" id="page-number" placeholder="Количество страниц">
                     </div>
                     <button class="generate-button" name="generate_book">Сгенерировать</button>
                     <div class="input last-input book-result">
@@ -102,27 +105,27 @@
                     <input type="hidden" name="type" id="type" value="type_article">
                     <div class="input">
                         <label for="author-surname">Фамилия и инициалы авторов</label>
-                        <input class="text-input" type="text" name="author-surname" id="author-surname">
+                        <input class="text-input" type="text" name="author-surname" id="author-surname" placeholder="Фамилия и инициалы авторов">
                     </div>
                     <div class="input">
                         <label for="article-name">Название статьи</label>
-                        <input class="text-input" type="text" name="article-name" id="article-name">
+                        <input class="text-input" type="text" name="article-name" id="article-name" placeholder="Название статьи">
                     </div>
                     <div class="input">
                         <label for="magazine-name">Название журнала</label>
-                        <input class="text-input" type="text" name="magazine-name" id="magazine-name">
+                        <input class="text-input" type="text" name="magazine-name" id="magazine-name" placeholder="Название журнала">
                     </div>
                     <div class="input">
                         <label for="article-publish-year">Год издания</label>
-                        <input class="text-input" type="text" name="article-publish-year" id="article-publish-year">
+                        <input class="text-input" type="text" name="article-publish-year" id="article-publish-year" placeholder="ДД.ММ.ГГ">
                     </div>
                     <div class="input">
                         <label for="magazine-number">Номер журнала</label>
-                        <input class="text-input" type="text" name="magazine-number" id="magazine-number">
+                        <input class="text-input" type="text" name="magazine-number" id="magazine-number" placeholder="Номер журнала">
                     </div>
                     <div class="input last-input">
                         <label for="magazine-article-number">Номер статьи в журнале</label>
-                        <input class="text-input" type="text" name="magazine-article-number" id="magazine-article-number">
+                        <input class="text-input" type="text" name="magazine-article-number" id="magazine-article-number" placeholder="Номер статьи в журнале">
                     </div>
                     <button class="generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
@@ -135,19 +138,19 @@
                     <input type="hidden" name="type" id="type" value="type_source">
                     <div class="input">
                         <label for="resource-author">Автор сайта</label>
-                        <input class="text-input" type="text" name="resource-author" id="resource-author">
+                        <input class="text-input" type="text" name="resource-author" id="resource-author" placeholder="Автор сайта">
                     </div>
                     <div class="input">
                         <label for="resource-name">Заголовок статьи или страницы</label>
-                        <input class="text-input" type="text" name="resource-name" id="resource-name">
+                        <input class="text-input" type="text" name="resource-name" id="resource-name" placeholder="Заголовок статьи или страницы">
                     </div>
                     <div class="input">
                         <label for="resource-link">Ссылка</label>
-                        <input class="text-input" type="text" name="resource-link" id="resource-link">
+                        <input class="text-input" type="text" name="resource-link" id="resource-link" placeholder="Ссылка">
                     </div>
                     <div class="input last-input">
                         <label for="visit-date">Дата обращения на сайт</label>
-                        <input class="text-input" type="text" name="visit-date" id="visit-date">
+                        <input class="text-input" type="text" name="visit-date" id="visit-date" placeholder="ДД.ММ.ГГ">
                     </div>
                     <button class="generate-button">Сгенерировать</button>
                     <div class="input last-input book-result">
