@@ -1,3 +1,9 @@
+/**
+    Webservice autosources. Generator for resource string according to GOST. 
+    Copyright (C) 2022-2023  Artemii Saganenko, Alexander Kuksin, Nikita Markin, Daniil Kurbanov
+*/
+
+
 
                                 // Navigation buttons logic
 

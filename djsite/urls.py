@@ -1,4 +1,4 @@
-#urls.py 0040
+#urls.py 0045
 
 """djsite URL Configuration
 
@@ -20,7 +20,7 @@ from django.urls import path, include
 from .views import *
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls), // the adming page was not set up. uncomment on your own risk
     path('', home_or_book_page, name="index_book"),
     path('article/', article_page, name="index_article"),
     path('webresource/', websource_page, name='index_webresource'),

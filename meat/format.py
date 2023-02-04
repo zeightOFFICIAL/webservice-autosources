@@ -1,4 +1,11 @@
-#format.py 0040
+"""
+    Webservice autosources. Generator for resource string according to GOST. 
+    Copyright (C) 2022-2023  Artemii Saganenko, Alexander Kuksin, Nikita Markin, Daniil Kurbanov
+"""
+
+
+#format.py 0045
+
 
 """
 resource stack:

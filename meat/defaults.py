@@ -1,4 +1,11 @@
-#default.py 0040
+"""
+    Webservice autosources. Generator for resource string according to GOST. 
+    Copyright (C) 2022-2023  Artemii Saganenko, Alexander Kuksin, Nikita Markin, Daniil Kurbanov
+"""
+
+
+#default.py 0045
+
 
 """
 This file indicates a set of values for HTML.
@@ -6,6 +13,7 @@ Since we have only one HTML, changing values inside is a practical necessity.
 Here there are four pre-arranged sets of values for default page (homepage) book, article, web-resource pages. 
 Upon function call (by button pressing) we re-render pages with specific for the case set of values.
 """
+
 
 def default_index():
     return  {
