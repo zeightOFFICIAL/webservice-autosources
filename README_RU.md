@@ -52,8 +52,8 @@ python ./manage.py runserver
 
 ### Разработчики
 
-@SaharoK-Er404 - Team lead, python программист, документация
-@dabchinsky - Front-end lead, дизайн
-@zeightOFFICIAL - Back-end lead, архитектура, документация
-@Kurbanov0 - Python программист, архитектура, концепт
-@Mckzzz - Python программист, концепт
+* @SaharoK-Er404 - Team lead, python программист, документация
+* @dabchinsky - Front-end lead, дизайн
+* @zeightOFFICIAL - Back-end lead, архитектура, документация
+* @Kurbanov0 - Python программист, архитектура, концепт
+* @Mckzzz - Python программист, концепт
