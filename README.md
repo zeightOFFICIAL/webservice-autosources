@@ -52,11 +52,11 @@ python ./manage.py runserver
 
 ### Contributors
 
-@SaharoK-Er404 - Team lead, python programmer, documentation
-@dabchinsky - Front-end lead, design
-@zeightOFFICIAL - Back-end lead, architecture, documentation
-@Kurbanov0 - Python programmer, architecture, concept
-@Mckzzz - Python programmer, concept
+* @SaharoK-Er404 - Team lead, python programmer, documentation
+* @dabchinsky - Front-end lead, design
+* @zeightOFFICIAL - Back-end lead, architecture, documentation
+* @Kurbanov0 - Python programmer, architecture, concept
+* @Mckzzz - Python programmer, concept
 
 ### Future scope
 
